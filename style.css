@@ -28,3 +28,51 @@ body {
 .container.show-nav {
   transform: rotate(-20deg);
 }
+
+/* Hides 3/4th of the circle */
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #79b3ff;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+/* Visible at start */
+.circle button#open {
+  left: 60%;
+}
+
+/* utside the scren at start */
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content img {
+  max-width: 100%;
+}
