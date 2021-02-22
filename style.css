@@ -29,6 +29,11 @@ body {
   transform: rotate(-20deg);
 }
 
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
 /* Hides 3/4th of the circle */
 .circle-container {
   position: fixed;
